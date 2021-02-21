@@ -1,0 +1,14 @@
+{
+  "motion": "运动",
+  "looks": "外观",
+  "sound": "声音",
+  "event": "事件",
+  "sensing": "侦测",
+  "control": "数据",
+  "operator": "计算",
+  "data": "数据",
+  "procedures": "自定义",
+  "argument": "自定义",
+  "other": "其他",
+  "total": "总计"
+}
