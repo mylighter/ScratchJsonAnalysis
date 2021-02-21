@@ -1,5 +1,5 @@
 import os
-packages_list=['pygame','json','zipfile','time']
+packages_list=['json','zipfile','time']
 
 print('Installing environmental packages...')
 for package in packages_list:
