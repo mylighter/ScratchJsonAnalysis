@@ -1,7 +1,7 @@
 import json
 
-def translate(block_Stat:dict,lang:str):
-    lang_dict=json.loads(open('scratch\\lang\\%s'%lang,encoding='utf-8').read())
+def translate(block_Stat:dict,lang_file:str):
+    lang_dict=json.loads(open('scratch\\lang\\%s'%lang_file,encoding='utf-8').read())
     returnDict={}
     for key in block_Stat.keys():
         try:
