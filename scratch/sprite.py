@@ -5,16 +5,17 @@ class Sprite(object):
         self.name=sprite['name']
 
         self.variables={}
-        for code,var in sprite['variables'].items():
+        for var in sprite['variables'].values():
             self.variables[var[0]]=var[1]
 
         self.lists={}
-        for code,alist in sprite['variables'].items():
-            self.lists[alist[0]]=alist[1]
+        for List in sprite['variables'].values():
+            self.lists[List[0]]=List[1]
 
         self.blocks={}
         for code,block in sprite['blocks'].items():
-            self.blocks[code]=Block(code,block)
+            if len(code)==20:
+                self.blocks[code]=Block(code,block)
 
     def __repr__(self):
         return f'<scratch_Sprite Object:{self.name} at {hex(id(self))}>'

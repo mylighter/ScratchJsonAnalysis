@@ -8,9 +8,9 @@ class Block(object):
             self.parent=block['parent']
             self.topLevel=block['topLevel']
             self.Type=self.opcode.split('_')[0]
-            self.block_name=self.opcode.split('_')[1]
+            self.block_name="_".join(self.opcode.split('_')[1:])
         except KeyError:
-            raise SB3Error('')
+            raise SB3Error('format')
         else:
             if self.topLevel:
                 self.position=[block['x'],block['y']]
